@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/image_view"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/image_view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_name"
+                android:textSize="16dp"
+                android:textColor="@color/colorBlack"
+                android:text="name"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_end_date"
+                android:textSize="14dp"
+                android:text="end date"
+                android:padding="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
